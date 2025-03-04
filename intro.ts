@@ -91,6 +91,21 @@
   console.log(prod(2));
   console.log(prod(2,3));
 
+  // Date object in TypeScript
+  const dob = new Date(2003 , 10 , 27);
+  console.log(dob);
+
+  /**
+   * any type -> your free ticket to get rid of TS type checking
+   * 
+   * if u want to define a variable with type any, then either mention ":any" while declaring the variable 
+   * or don't assign a value while declaring a variable
+   */
+
+  let x ; // this variable has a type "any"
+  x = 10;
+  x = "10";
+
 
   
   
