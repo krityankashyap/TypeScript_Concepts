@@ -106,6 +106,54 @@
   x = 10;
   x = "10";
 
+  function fun() : void { // when u don't need to return 
+    
+  }
+  console.log(fun());
+
+  /**
+   * Enums or Enumerations
+   * const INITIALISED = "initialised"
+   * Ticket status ["initialised" , "cancelled" , "resolved" , "pending"];
+   * 
+   * ti.status == "resolved"
+   */
+
+  enum TicketStatus { // gives us set of constants that we can use directly which is internally mapped to a bunch of integers
+    INITIALISED,
+    CANCELLED,
+    RESOLVED,
+    PENDING
+  }
+  console.log(TicketStatus.INITIALISED);
+  console.log(TicketStatus.CANCELLED);
+
+  const ticket ={
+  id:1,
+  title : "ticketStatus",
+  status : TicketStatus.INITIALISED
+  };
+  console.log(ticket);
+  if(ticket.status == TicketStatus.INITIALISED){
+    console.log("done");
+  }
+
+  enum StatusCodes {
+    NOTFOUND = 404,
+    SUCCESS = 200,
+    BADREQUEST = 400
+
+  }
+  const response = {
+    url : "www.something.com",
+    type : "GET",
+    data : "Some string value",
+    status : StatusCodes.SUCCESS
+  }
+
+  console.log(response);
+
+
 
   
   
