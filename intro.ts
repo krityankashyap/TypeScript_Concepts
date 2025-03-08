@@ -153,6 +153,18 @@
 
   console.log(response);
 
+  const result : {name : string , marks : number , address? : string} = {
+    name : "Krityan",
+    marks : 88,
+    
+  }
+
+  // updating a old key-value pair
+  result.marks = 93;  //TS will allow this
+   
+  // adding a new key-value pair
+  result.address = "XYZ" // TS will allow this? => No , u have to make it optional
+
 
 
   
